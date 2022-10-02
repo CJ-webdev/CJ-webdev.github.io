@@ -1,30 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style.css" />
-    <title>Todo list</title>
+    <title>Elagage Abattage d'arbre et Entretien Espace-vert Coin John</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
   </head>
   <body>
-    <div class="container">
-      <h1>Todo list</h1>
-      <form action="">
-        <input
-          id="item"
-          type="text"
-          placeholder="A faire"
-          autocomplete="off"
-          minlength="2"
-        />
-      </form>
-      <ul id="list">
-        <li><span>*</span> Cliquez sur un todo pour le supprimer</li>
-      </ul>
-    </div>
+    <header>
+      <nav>
+        <div nav-left>
+          <img src="./images/logo.png" alt="logo" id="nav-logo" />
+        </div>
 
+        <div class="nav-right">
+          <i id="hamburger" class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark-large"></i>
+        </div>
+      </nav>
+
+      <div class="header-center">
+        <img id="logo-header" src="./images/logo.png" alt="logo" />
+        <h1>
+          Coin John Breuil le Vert <br />
+          Elagage Abattage d'arbre Entretien Espace Verts dans L'Oise 60 et ses
+          Alentours
+        </h1>
+        <a id="link-header" href="#">Devis Gratuits</a>
+      </div>
+      <div class="contact">
+        <a href="tel:+33344519139" id="tel" class="btn btn2"
+          ><i class="fa-solid fa-phone"></i> 0344519139</a
+        >
+        <a href="tel:+33614561166" id="portable" class="btn btn2"
+          ><i class="fa-solid fa-mobile"></i> 0614561166</a
+        >
+      </div>
+    </header>
+    <section class="section1">
+      <img src="./images/photo.jpg" alt="photo de l'artisan" />
+      <div class="descriptif">
+        <h2>Coin John</h2>
+        <h3>Elagueur Grimpeur <br />Tous travaux en hauteur</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsa
+          officiis exercitationem expedita laborum aliquam? Quod laborum
+          inventore ipsum cumque at dolorem quasi ducimus iste tempora deleniti,
+          nulla nobis, reprehenderit sint consequatur provident. Esse aliquid
+          quasi fugiat cupiditate laudantium! Incidunt quam doloremque aliquid
+          consequatur atque modi vel nihil molestiae id consequuntur? Minima
+          adipisci ut dolores debitis quis praesentium culpa at?
+        </p>
+        <a href="tel:+33614561166">Interventions en urgence</a>
+      </div>
+    </section>
+    <section class="section2">
+      <h2 class="prestation">Nos Prestations</h2>
+      <div class="prestation-left">
+        <h3>Elagage</h3>
+        <img src="./images/Elagage.jpg" alt="elagage d'arbre" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint
+          consequatur perferendis tempora esse pariatur architecto fuga aliquid
+          perspiciatis quibusdam aut vel, ipsa facere distinctio atque veritatis
+          vitae corrupti nulla. Magnam nobis ullam enim iusto magni tempora in
+          facilis! Explicabo error adipisci dolorum pariatur doloribus
+          necessitatibus, voluptatum quasi atque ad!
+        </p>
+      </div>
+      <div class="prestation-middle">
+        <h3>Abbatage</h3>
+        <img src="./images/Abattage.jpg" alt="abattage" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex
+          aliquid beatae? Dolor ducimus laborum veritatis porro aperiam
+          asperiores ullam quisquam saepe ratione, quasi consequatur ea
+          temporibus modi officiis alias officia harum magnam hic blanditiis
+          aspernatur fugiat maxime beatae facere laudantium. Eos nam sit iusto
+          repudiandae iste id inventore porro!
+        </p>
+      </div>
+      <div class="prestation-right">
+        <h3>Entretien espaces Verts</h3>
+        <img src="./images/Entretien.jpg" alt="photo entretien de jardin" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+          repellendus. Exercitationem amet velit sunt magni totam. Placeat magni
+          fuga deserunt nihil aperiam, dignissimos temporibus, deleniti suscipit
+          nam odio eum quo delectus maxime, enim ea adipisci officia.
+          Dignissimos architecto facere distinctio sequi quod tempore omnis
+          provident voluptates aut! Dolores, necessitatibus iste!
+        </p>
+      </div>
+    </section>
+    <section class="section3">
+      <h2>Galerie de nos interventions</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="section4">
+      <form action="">
+        <h2>Devis Gratuits</h2>
+        <i class="fa-solid fa-user"></i>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Votre Nom."
+        /><br />
+        <i class="fa-solid fa-phone"></i>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          required
+          placeholder="Votre numero de Telephone."
+        />
+        <i class="fa-solid fa-envelope"></i>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Votre Email."
+        />
+        <i class="fa-solid fa-map-location"></i>
+        <input
+          type="text"
+          name="adress"
+          id="adress"
+          required
+          placeholder="Votre Adresse."
+        />
+        <i class="fa-solid fa-message-text"></i>
+        <textarea name="message" id="message" cols="30" rows="10">
+Votre Message pour plus d'information sur les travaux a realiser.</textarea
+        >
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane-top"></i>Envoyer
+        </button>
+      </form>
+      <img src="./images/saw.jpg" alt="tronçonneuse" />
+    </section>
+    <footer>
+      <div class="footer-left">
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Paramètres des cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <p>
+          Coin John<br />
+          21 rue neuve 60600 Breuil le Vert <br />
+          N° de SIRET 43141080200026
+        </p>
+        <a href="mailto:artisan.coin@gmail.com" id="mail" class="btn btn2"
+          ><i class="fa-solid fa-envelope"></i> artisan.coin@gmail.com</a
+        >
+      </div>
+      <div class="footer-right">
+        <a href="#"
+          ><img src="./images/logo-cj-white-full.png" alt="logo developpeur"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
