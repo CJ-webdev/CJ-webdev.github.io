@@ -50,15 +50,16 @@ header {
     .btn2 {
       color: $color1;
       background-color: $color3;
-      margin: 5px;
-      padding: 5px 10px;
+      margin: 5px auto;
+      padding: 8px 15px;
       border: solid $color1 2px;
       border-radius: 8px;
       text-transform: uppercase;
       text-decoration: none;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       text-align: center;
+      font-weight: 600;
     }
   }
   .header-center {
