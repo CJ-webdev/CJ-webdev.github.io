@@ -6,11 +6,25 @@
 }
 
 .btn2 {
-  color: rgb(33, 92, 41);
-  background-color: rgb(248, 245, 62);
+  color: rgb(248, 245, 62);
+  background-color: rgba(0, 0, 0, 0.297);
+  border: rgb(248, 245, 62) 2px solid;
   margin: 5px auto;
   padding: 8px 15px;
-  border: solid rgb(33, 92, 41) 2px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btn1 {
+  color: rgb(33, 92, 41);
+  border: rgb(33, 92, 41) 2px solid;
+  margin: 5px auto;
+  padding: 8px 15px;
   border-radius: 8px;
   text-transform: uppercase;
   text-decoration: none;
@@ -22,7 +36,7 @@
 
 header {
   height: 100vh;
-  background: url(../images/background-big.jpg) center/cover;
+  background: url(../images/background.jpg) center/cover;
 }
 header nav {
   height: 55px;
@@ -78,14 +92,14 @@ header .header-center #link-header {
   transform: translateX(-50%);
   top: 12px;
   left: 50%;
-  background-color: rgb(248, 245, 62);
-  color: rgb(33, 92, 41);
+  color: rgb(248, 245, 62);
+  border: rgb(248, 245, 62) 2px solid;
   border-radius: 8px;
   padding: 7px 14px;
   font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.297);
 }
 

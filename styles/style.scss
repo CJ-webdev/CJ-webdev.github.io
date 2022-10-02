@@ -13,11 +13,25 @@ $black: rgb(18, 18, 18);
 $transparent: rgba(0, 0, 0, 0.297);
 
 .btn2 {
-  color: $color1;
-  background-color: $color3;
+  color: $color3;
+  background-color: $transparent;
+  border: $color3 2px solid;
   margin: 5px auto;
   padding: 8px 15px;
-  border: solid $color1 2px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+}
+.btn1 {
+  color: $color1;
+  border: $color1 2px solid;
+  margin: 5px auto;
+  padding: 8px 15px;
+  // border: solid $color1 2px;
   border-radius: 8px;
   text-transform: uppercase;
   text-decoration: none;
@@ -29,7 +43,7 @@ $transparent: rgba(0, 0, 0, 0.297);
 
 header {
   height: 100vh;
-  background: url(../images/background-big.jpg) center/cover;
+  background: url(../images/background.jpg) center/cover;
 
   nav {
     height: 55px;
@@ -86,14 +100,15 @@ header {
       transform: translateX(-50%);
       top: 12px;
       left: 50%;
-      background-color: $color3;
-      color: $color1;
+      // background-color: $color3;
+      color: $color3;
+      border: $color3 2px solid;
       border-radius: 8px;
       padding: 7px 14px;
       font-size: 0.9rem;
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 600;
       box-shadow: (12px 12px 12px rgba(0, 0, 0, 0.297));
     }
   }
