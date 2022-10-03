@@ -15,65 +15,74 @@ header {
     #nav-logo {
       height: 50px;
       padding-left: 50px;
+      @media screen and (max-width: 600px) {
+        padding-left: 25px;
+      }
     }
-    // a {
-    //   width: 50px;
-    // }
     i {
       padding-right: 50px;
       font-size: 2rem;
       color: $color2;
+      @media screen and (max-width: 600px) {
+        padding-right: 25px;
+      }
     }
   }
-  .contact {
-    position: absolute;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background: $transparent;
-    width: 100%;
-  }
-  .header-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
+}
+.contact {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: $transparent;
+  width: 100%;
+}
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
 
-    #logo-header {
-      margin: 5px auto;
-      height: 50%;
+  #logo-header {
+    margin: 5px auto;
+    height: 50%;
+    @media screen and (max-width: 600px) {
+      height: 40%;
     }
-    h1 {
-      font-size: 1.2rem;
-      color: $color3;
-      text-align: Center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      line-height: 2rem;
-      padding: 10px;
-      margin: 0 10px;
-      background: $transparent;
-      border-radius: 20px;
+  }
+  h1 {
+    font-size: 1.2rem;
+    color: $color3;
+    text-align: Center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    padding: 10px;
+    margin: 0 10px;
+    background: $transparent;
+    border-radius: 20px;
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
     }
-    #link-header {
-      position: fixed;
-      z-index: 2;
-      transform: translateX(-50%);
-      top: 12px;
-      left: 50%;
-      // background-color: $color3;
-      color: $color3;
-      border: $color3 2px solid;
-      border-radius: 8px;
-      padding: 7px 14px;
-      font-size: 0.9rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
+  }
+  #link-header {
+    position: fixed;
+    z-index: 2;
+    transform: translateX(-50%);
+    top: 12px;
+    left: 50%;
+    // background-color: $color3;
+    color: $color3;
+    border: $color3 2px solid;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }

@@ -16,6 +16,9 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
+    @media screen and (max-width: 750px) {
+      display: block;
+    }
 
     .prestation {
       padding: 15px;

@@ -57,12 +57,23 @@ header nav #nav-logo {
   height: 50px;
   padding-left: 50px;
 }
+@media screen and (max-width: 600px) {
+  header nav #nav-logo {
+    padding-left: 25px;
+  }
+}
 header nav i {
   padding-right: 50px;
   font-size: 2rem;
   color: rgb(155, 199, 67);
 }
-header .contact {
+@media screen and (max-width: 600px) {
+  header nav i {
+    padding-right: 25px;
+  }
+}
+
+.contact {
   position: absolute;
   bottom: 0;
   display: grid;
@@ -73,18 +84,24 @@ header .contact {
   background: rgba(0, 0, 0, 0.297);
   width: 100%;
 }
-header .header-center {
+
+.header-center {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   flex-direction: column;
 }
-header .header-center #logo-header {
+.header-center #logo-header {
   margin: 5px auto;
   height: 50%;
 }
-header .header-center h1 {
+@media screen and (max-width: 600px) {
+  .header-center #logo-header {
+    height: 40%;
+  }
+}
+.header-center h1 {
   font-size: 1.2rem;
   color: rgb(248, 245, 62);
   text-align: Center;
@@ -96,7 +113,12 @@ header .header-center h1 {
   background: rgba(0, 0, 0, 0.297);
   border-radius: 20px;
 }
-header .header-center #link-header {
+@media screen and (max-width: 600px) {
+  .header-center h1 {
+    font-size: 1rem;
+  }
+}
+.header-center #link-header {
   position: fixed;
   z-index: 2;
   transform: translateX(-50%);
@@ -118,10 +140,28 @@ header .header-center #link-header {
   grid-template-columns: 50% 50%;
   margin: 100px auto;
 }
+@media screen and (max-width: 650px) {
+  .section1 {
+    display: block;
+  }
+}
 .section1 .img-container {
   margin: 20px 20px;
   border-radius: 20px;
   background: url(../images/photo.jpg) center/cover;
+}
+@media screen and (max-width: 650px) {
+  .section1 .img-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section1 .img-container {
+    width: 300px;
+    height: 300px;
+  }
 }
 .section1 .descriptif {
   padding: 20px 20px;
@@ -155,6 +195,11 @@ header .header-center #link-header {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 750px) {
+  .section2 .prestations {
+    display: block;
+  }
 }
 .section2 .prestations .prestation {
   padding: 15px;
@@ -197,6 +242,11 @@ header .header-center #link-header {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 800px) {
+  .section4 {
+    display: block;
+  }
+}
 .section4 form {
   width: 80%;
   margin: 20px auto;
@@ -206,10 +256,12 @@ header .header-center #link-header {
 .section4 form textarea {
   resize: none;
   width: 80%;
+  color: rgb(33, 92, 41);
 }
 .section4 form i {
   display: block;
   margin-bottom: 5px;
+  color: rgb(33, 92, 41);
 }
 .section4 .form h2 {
   background: rgb(155, 199, 67);
@@ -225,10 +277,7 @@ header .header-center #link-header {
 .section4 .form input[type=tel],
 .section4 .form input[type=email],
 .section4 .form textarea {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   outline: none;
   box-sizing: border-box;
   width: 100%;
@@ -236,6 +285,19 @@ header .header-center #link-header {
   margin-bottom: 4%;
   border: 1px solid rgb(33, 92, 41);
   padding: 3%;
+}
+.section4 .form input[type=text]::-moz-placeholder, .section4 .form input[type=date]::-moz-placeholder, .section4 .form input[type=tel]::-moz-placeholder, .section4 .form input[type=email]::-moz-placeholder, .section4 .form textarea::-moz-placeholder {
+  color: rgb(33, 92, 41);
+}
+.section4 .form input[type=text]:-ms-input-placeholder, .section4 .form input[type=date]:-ms-input-placeholder, .section4 .form input[type=tel]:-ms-input-placeholder, .section4 .form input[type=email]:-ms-input-placeholder, .section4 .form textarea:-ms-input-placeholder {
+  color: rgb(33, 92, 41);
+}
+.section4 .form input[type=text]::placeholder,
+.section4 .form input[type=date]::placeholder,
+.section4 .form input[type=tel]::placeholder,
+.section4 .form input[type=email]::placeholder,
+.section4 .form textarea::placeholder {
+  color: rgb(33, 92, 41);
 }
 .section4 .form input[type=text]:focus,
 .section4 .form input[type=tel]:focus,

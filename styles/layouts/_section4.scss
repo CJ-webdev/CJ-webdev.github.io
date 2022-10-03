@@ -1,6 +1,9 @@
 .section4 {
   display: grid;
   grid-template-columns: 50% 50%;
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 
   form {
     width: 80%;
@@ -11,10 +14,12 @@
     textarea {
       resize: none;
       width: 80%;
+      color: $color1;
     }
     i {
       display: block;
       margin-bottom: 5px;
+      color: $color1;
     }
   }
   .form h2 {
@@ -31,10 +36,7 @@
   .form input[type="tel"],
   .form input[type="email"],
   .form textarea {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none;
     box-sizing: border-box;
     width: 100%;
@@ -42,6 +44,9 @@
     margin-bottom: 4%;
     border: 1px solid $color1;
     padding: 3%;
+    &::placeholder {
+      color: $color1;
+    }
   }
   .form input[type="text"]:focus,
   .form input[type="tel"]:focus,
