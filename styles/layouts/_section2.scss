@@ -1,17 +1,40 @@
 .section2 {
   width: 100%;
 
+  h2 {
+    margin: 30px;
+    text-transform: uppercase;
+  }
+  h3 {
+    margin: 10px 30px;
+    height: 50px;
+    text-transform: uppercase;
+  }
+
   .prestations {
     width: 100%;
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
 
-    .img-elagage {
+    .prestation {
+      padding: 15px;
+    }
+
+    .img-prestation {
       width: 80%;
       margin: 20px auto;
-      height: 300px;
-      background: url(../images/Elagage.jpg) center/cover;
+      height: 280px;
       border-radius: 30px;
+    }
+    .img-elagage {
+      background: url(../images/Elagage.jpg) center/cover;
+    }
+    .img-abbatage {
+      background: url(../images/Abattage.jpg) center/cover;
+    }
+    .img-entretien {
+      background: url(../images/Entretien.jpg) center/cover;
     }
   }
 }

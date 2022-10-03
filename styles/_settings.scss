@@ -6,12 +6,12 @@
 $color1: rgb(33, 92, 41);
 $color2: rgb(155, 199, 67);
 $color3: rgb(248, 245, 62);
-$white: rgb(234, 234, 234);
+$white: rgb(250, 253, 243);
 $black: rgb(18, 18, 18);
 $transparent: rgba(0, 0, 0, 0.297);
 
 body {
-  background: $white;
+  background-color: $white;
   color: $black;
   font-family: Arial, Helvetica, sans-serif;
 }

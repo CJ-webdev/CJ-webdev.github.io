@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(234, 234, 234);
+  background-color: rgb(250, 253, 243);
   color: rgb(18, 18, 18);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -46,6 +46,7 @@ header {
 header nav {
   width: 100%;
   position: fixed;
+  z-index: 1;
   height: 55px;
   background: rgba(0, 0, 0, 0.297);
   display: flex;
@@ -88,6 +89,8 @@ header .header-center h1 {
   color: rgb(248, 245, 62);
   text-align: Center;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2rem;
   padding: 10px;
   margin: 0 10px;
   background: rgba(0, 0, 0, 0.297);
@@ -95,6 +98,7 @@ header .header-center h1 {
 }
 header .header-center #link-header {
   position: fixed;
+  z-index: 2;
   transform: translateX(-50%);
   top: 12px;
   left: 50%;
@@ -116,11 +120,12 @@ header .header-center #link-header {
 }
 .section1 .img-container {
   margin: 20px 20px;
+  border-radius: 20px;
   background: url(../images/photo.jpg) center/cover;
 }
 .section1 .descriptif {
   padding: 20px 20px;
-  background: rgb(234, 234, 234);
+  background: rgb(250, 253, 243);
   color: rgb(18, 18, 18);
 }
 .section1 .descriptif h2,
@@ -136,15 +141,121 @@ header .header-center #link-header {
 .section2 {
   width: 100%;
 }
+.section2 h2 {
+  margin: 30px;
+  text-transform: uppercase;
+}
+.section2 h3 {
+  margin: 10px 30px;
+  height: 50px;
+  text-transform: uppercase;
+}
 .section2 .prestations {
   width: 100%;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.section2 .prestations .img-elagage {
+.section2 .prestations .prestation {
+  padding: 15px;
+}
+.section2 .prestations .img-prestation {
   width: 80%;
   margin: 20px auto;
-  height: 300px;
-  background: url(../images/Elagage.jpg) center/cover;
+  height: 280px;
   border-radius: 30px;
+}
+.section2 .prestations .img-elagage {
+  background: url(../images/Elagage.jpg) center/cover;
+}
+.section2 .prestations .img-abbatage {
+  background: url(../images/Abattage.jpg) center/cover;
+}
+.section2 .prestations .img-entretien {
+  background: url(../images/Entretien.jpg) center/cover;
+}
+
+.section3 {
+  margin: 100px auto;
+}
+.section3 h2 {
+  margin-left: 50px;
+}
+.section3 .swiper {
+  width: 70%;
+  margin: 60px auto;
+}
+.section3 .swiper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section4 form {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid rgb(155, 199, 67);
+  padding: 20px;
+}
+.section4 form textarea {
+  resize: none;
+  width: 80%;
+}
+.section4 form i {
+  display: block;
+  margin-bottom: 5px;
+}
+.section4 .form h2 {
+  background: rgb(155, 199, 67);
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(250, 253, 243);
+  margin: -16px -16px 16px -16px;
+}
+.section4 .form input[type=text],
+.section4 .form input[type=date],
+.section4 .form input[type=tel],
+.section4 .form input[type=email],
+.section4 .form textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid rgb(33, 92, 41);
+  padding: 3%;
+}
+.section4 .form input[type=text]:focus,
+.section4 .form input[type=tel]:focus,
+.section4 .form input[type=email]:focus,
+.section4 .form textarea:focus {
+  box-shadow: 0 0 5px rgb(155, 199, 67);
+  padding: 3%;
+  border: 1px solid rgb(155, 199, 67);
+}
+.section4 .form button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: rgb(155, 199, 67);
+  border-bottom: 2px solid rgb(155, 199, 67);
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+}
+.section4 .form button:hover {
+  background: rgb(155, 199, 67);
 }/*# sourceMappingURL=style.css.map */

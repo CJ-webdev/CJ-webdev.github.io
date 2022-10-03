@@ -1,0 +1,69 @@
+.section4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  form {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid $color2;
+    padding: 20px;
+
+    textarea {
+      resize: none;
+      width: 80%;
+    }
+    i {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  .form h2 {
+    background: $color2;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: $white;
+    margin: -16px -16px 16px -16px;
+  }
+  .form input[type="text"],
+  .form input[type="date"],
+  .form input[type="tel"],
+  .form input[type="email"],
+  .form textarea {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid $color1;
+    padding: 3%;
+  }
+  .form input[type="text"]:focus,
+  .form input[type="tel"]:focus,
+  .form input[type="email"]:focus,
+  .form textarea:focus {
+    box-shadow: 0 0 5px $color2;
+    padding: 3%;
+    border: 1px solid $color2;
+  }
+
+  .form button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: $color2;
+    border-bottom: 2px solid $color2;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+  }
+  .form button:hover {
+    background: $color2;
+  }
+}
