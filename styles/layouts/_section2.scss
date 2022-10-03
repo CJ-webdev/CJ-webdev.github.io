@@ -1,0 +1,17 @@
+.section2 {
+  width: 100%;
+
+  .prestations {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .img-elagage {
+      width: 80%;
+      margin: 20px auto;
+      height: 300px;
+      background: url(../images/Elagage.jpg) center/cover;
+      border-radius: 30px;
+    }
+  }
+}

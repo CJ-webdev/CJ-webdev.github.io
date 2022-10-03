@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$color1: rgb(33, 92, 41);
+$color2: rgb(155, 199, 67);
+$color3: rgb(248, 245, 62);
+$white: rgb(234, 234, 234);
+$black: rgb(18, 18, 18);
+$transparent: rgba(0, 0, 0, 0.297);
+
+body {
+  background: $white;
+  color: $black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn2 {
+  color: $color3;
+  background-color: $transparent;
+  border: $color3 2px solid;
+  margin: 5px auto;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+}
+.btn1 {
+  color: $color1;
+  border: $color1 2px solid;
+  margin: 5px auto;
+  padding: 8px 15px;
+  // border: solid $color1 2px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+}
