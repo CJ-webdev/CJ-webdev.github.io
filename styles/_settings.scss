@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
 $color1: rgb(33, 92, 41);
 $color2: rgb(155, 199, 67);
 $color3: rgb(248, 245, 62);
@@ -13,7 +19,15 @@ $transparent: rgba(0, 0, 0, 0.297);
 body {
   background-color: $white;
   color: $black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+a {
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
 }
 
 .btn2 {

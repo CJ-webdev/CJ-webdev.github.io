@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url(./fonts/Poppins-Medium.ttf);
+}
 body {
   background-color: rgb(250, 253, 243);
   color: rgb(18, 18, 18);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+a {
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
 }
 
 .btn2 {
@@ -52,6 +64,21 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header nav #link-header {
+  z-index: 4;
+  color: rgb(248, 245, 62);
+  border: rgb(248, 245, 62) 2px solid;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+header nav #link-header:hover {
+  transform: scale(1.1);
 }
 header nav #nav-logo {
   height: 50px;
@@ -118,50 +145,25 @@ header nav i {
     font-size: 1rem;
   }
 }
-.header-center #link-header {
-  position: fixed;
-  z-index: 2;
-  transform: translateX(-50%);
-  top: 12px;
-  left: 50%;
-  color: rgb(248, 245, 62);
-  border: rgb(248, 245, 62) 2px solid;
-  border-radius: 8px;
-  padding: 7px 14px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
 .section1 {
   width: 100%;
   display: grid;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: 50% 50%;
   margin: 100px auto;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .section1 {
     display: block;
   }
 }
-.section1 .img-container {
-  margin: 20px 20px;
+.section1 .img-container img {
+  display: block;
+  margin: auto;
   border-radius: 20px;
-  background: url(../images/photo.jpg) center/cover;
-}
-@media screen and (max-width: 650px) {
-  .section1 .img-container {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 450px) {
-  .section1 .img-container {
-    width: 300px;
-    height: 300px;
-  }
+  width: 70%;
 }
 .section1 .descriptif {
   padding: 20px 20px;
@@ -174,8 +176,24 @@ header nav i {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
+.section1 .descriptif h4 {
+  text-align: center;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.section1 .descriptif h5 {
+  font-size: 1rem;
+  padding: 10px 0;
+}
 .section1 .descriptif p {
   margin-bottom: 20px;
+}
+.section1 .descriptif .btn1 {
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+}
+.section1 .descriptif .btn1:hover {
+  transform: scale(1.1);
 }
 
 .section2 {
@@ -227,8 +245,10 @@ header nav i {
   margin-left: 50px;
 }
 .section3 .swiper {
-  width: 70%;
+  max-width: 600px;
+  width: 80%;
   margin: 60px auto;
+  z-index: 0;
 }
 .section3 .swiper img {
   display: block;
@@ -249,9 +269,18 @@ header nav i {
 }
 .section4 form {
   width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
   border: 2px solid rgb(155, 199, 67);
   padding: 20px;
+}
+.section4 form h2 {
+  background: rgb(155, 199, 67);
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(250, 253, 243);
+  margin: -16px -16px 16px -16px;
 }
 .section4 form textarea {
   resize: none;
@@ -263,20 +292,8 @@ header nav i {
   margin-bottom: 5px;
   color: rgb(33, 92, 41);
 }
-.section4 .form h2 {
-  background: rgb(155, 199, 67);
-  padding: 20px 0;
-  font-size: 140%;
-  font-weight: 300;
-  text-align: center;
-  color: rgb(250, 253, 243);
-  margin: -16px -16px 16px -16px;
-}
-.section4 .form input[type=text],
-.section4 .form input[type=date],
-.section4 .form input[type=tel],
-.section4 .form input[type=email],
-.section4 .form textarea {
+.section4 form input,
+.section4 form textarea {
   transition: all 0.3s ease-in-out;
   outline: none;
   box-sizing: border-box;
@@ -286,28 +303,27 @@ header nav i {
   border: 1px solid rgb(33, 92, 41);
   padding: 3%;
 }
-.section4 .form input[type=text]::-moz-placeholder, .section4 .form input[type=date]::-moz-placeholder, .section4 .form input[type=tel]::-moz-placeholder, .section4 .form input[type=email]::-moz-placeholder, .section4 .form textarea::-moz-placeholder {
+.section4 form input::-moz-placeholder, .section4 form textarea::-moz-placeholder {
   color: rgb(33, 92, 41);
 }
-.section4 .form input[type=text]:-ms-input-placeholder, .section4 .form input[type=date]:-ms-input-placeholder, .section4 .form input[type=tel]:-ms-input-placeholder, .section4 .form input[type=email]:-ms-input-placeholder, .section4 .form textarea:-ms-input-placeholder {
+.section4 form input:-ms-input-placeholder, .section4 form textarea:-ms-input-placeholder {
   color: rgb(33, 92, 41);
 }
-.section4 .form input[type=text]::placeholder,
-.section4 .form input[type=date]::placeholder,
-.section4 .form input[type=tel]::placeholder,
-.section4 .form input[type=email]::placeholder,
-.section4 .form textarea::placeholder {
+.section4 form input::placeholder,
+.section4 form textarea::placeholder {
   color: rgb(33, 92, 41);
 }
-.section4 .form input[type=text]:focus,
-.section4 .form input[type=tel]:focus,
-.section4 .form input[type=email]:focus,
-.section4 .form textarea:focus {
+.section4 form input:hover,
+.section4 form textarea:hover {
+  background: rgb(155, 199, 67);
+}
+.section4 form input:focus,
+.section4 form textarea:focus {
   box-shadow: 0 0 5px rgb(155, 199, 67);
   padding: 3%;
   border: 1px solid rgb(155, 199, 67);
 }
-.section4 .form button {
+.section4 form button {
   box-sizing: border-box;
   width: 100%;
   padding: 3%;
@@ -318,6 +334,71 @@ header nav i {
   border-left-style: none;
   color: #fff;
 }
-.section4 .form button:hover {
-  background: rgb(155, 199, 67);
+.section4 .section4-right {
+  text-align: center;
+}
+.section4 .section4-right .map {
+  margin: 50px auto;
+  width: 80%;
+}
+.section4 .section4-right .infos {
+  margin: 20px auto;
+}
+.section4 .section4-right .infos h4 {
+  margin-bottom: 20px;
+}
+.section4 .section4-right .infos a {
+  display: block;
+  margin-top: 20px;
+  color: black;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  display: grid;
+  background-color: rgb(33, 92, 41);
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    font-size: 0.6rem;
+  }
+}
+footer .footer-left {
+  margin: auto;
+}
+@media screen and (max-width: 650px) {
+  footer .footer-left ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+footer .footer-left li {
+  list-style: none;
+  margin: 5px;
+}
+footer .footer-left a {
+  color: rgb(250, 253, 243);
+}
+footer .footer-right {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 390px) {
+  footer .footer-right p {
+    display: none;
+  }
+}
+footer .footer-right img {
+  width: 150px;
+}
+@media screen and (max-width: 900px) {
+  footer .footer-right img {
+    width: 75px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -5,8 +5,10 @@
   }
 
   .swiper {
-    width: 70%;
+    max-width: 600px;
+    width: 80%;
     margin: 60px auto;
+    z-index: 0;
     img {
       display: block;
       width: 100%;

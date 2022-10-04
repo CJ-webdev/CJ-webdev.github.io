@@ -1,24 +1,21 @@
 .section1 {
   width: 100%;
   display: grid;
+  align-items: center;
+  justify-content: center;
   grid-template-columns: 50% 50%;
   margin: 100px auto;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 700px) {
     display: block;
   }
 
   .img-container {
-    margin: 20px 20px;
-    border-radius: 20px;
-    background: url(../images/photo.jpg) center/cover;
-    @media screen and (max-width: 650px) {
-      width: 400px;
-      height: 400px;
-      margin: 0 auto;
-    }
-    @media screen and (max-width: 450px) {
-      width: 300px;
-      height: 300px;
+    img {
+      display: block;
+      margin: auto;
+      border-radius: 20px;
+      // min-height: 500px;
+      width: 70%;
     }
   }
 
@@ -32,8 +29,24 @@
       text-transform: uppercase;
       padding-bottom: 10px;
     }
+    h4 {
+      text-align: center;
+      line-height: 20px;
+      padding-bottom: 10px;
+    }
+    h5 {
+      font-size: 1rem;
+      padding: 10px 0;
+    }
     p {
       margin-bottom: 20px;
+    }
+    .btn1 {
+      margin-top: 10px;
+      transition: 0.5s ease-in-out;
+    }
+    .btn1:hover {
+      transform: scale(1.1);
     }
   }
 }

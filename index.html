@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coin John artisan élagueur grimpeur je vous propose mes service pour l'abattage, l'élagage, l'entretien de votre jardin et bien d'autres soins des arbres dans l'Oise. je me situe a Breuil le Vert mais j'interviens aussi dans bien d'autre communes"
+    />
     <title>Elagage Abattage d'arbre et Entretien Espace-vert Coin John</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
@@ -25,7 +29,7 @@
         <div nav-left>
           <img src="./images/logo.png" alt="logo" id="nav-logo" />
         </div>
-
+        <a id="link-header" href="#">Devis Gratuits</a>
         <div class="nav-right">
           <i id="hamburger" class="fa-solid fa-bars"></i>
         </div>
@@ -38,7 +42,6 @@
           Elagage Abattage d'arbre Entretien Espace Verts dans L'Oise 60 et ses
           Alentours
         </h1>
-        <a id="link-header" href="#">Devis Gratuits</a>
       </div>
       <div class="contact">
         <a href="tel:+33344519139" id="tel" class="btn btn2"
@@ -50,11 +53,21 @@
       </div>
     </header>
     <section class="section1">
-      <div class="img-container"></div>
+      <div class="img-container">
+        <img src="./images/photo.jpg" alt="photo coin john elagage" />
+      </div>
       <div class="descriptif">
         <h2>Qui suis-je</h2>
         <h3>Elagueur Grimpeur</h3>
-        <h4>Je Propose</h4>
+        <h4>
+          Coin John artisan <span>élagueur</span> grimpeur je vous propose mes
+          service pour <span>l'abattage</span>,<span>l'élagage</span>,
+          <span>l'entretien de votre jardin</span> et bien d'autres soins des
+          arbres <span>dans l'Oise</span>. je me situe a
+          <span>Breuil le Vert</span> mais j'interviens aussi dans bien d'autre
+          communes
+        </h4>
+        <h5>Je Propose</h5>
         <p><i class="fa-solid fa-up-down"></i> Tous travaux en hauteur<br /></p>
         <p>
           <i class="fa-solid fa-file-signature"></i> Des devis gratuits sans
@@ -193,13 +206,45 @@
           placeholder="Votre Adresse."
         />
         <i class="fa-solid fa-message"></i>
-        <textarea name="message" id="message" cols="20" rows="10">
-Votre Message pour plus d'information sur les travaux a realiser.</textarea
-        >
+        <textarea
+          name="message"
+          id="message"
+          cols="20"
+          rows="10"
+          placeholder="Votre Message pour plus d'information sur les travaux a realiser."
+        ></textarea>
         <button type="submit">
           <i class="fa-solid fa-paper-plane-top"></i>Envoyer
         </button>
       </form>
+      <div class="section4-right">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59658.97326526942!2d2.3419506688017098!3d49.35632088617891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7b5f78ce71e89%3A0xc736006d0a22e79a!2sCoin%20J.!5e0!3m2!1sfr!2sfr!4v1664897233580!5m2!1sfr!2sfr"
+          width="600"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="infos">
+          <h4>Coin John</h4>
+          <p>
+            21 rue neuve 60600 Breuil le Vert <br />
+            N° de SIRET 43141080200026
+          </p>
+          <a href="mailto:artisan.coin@gmail.com" id="mail"
+            ><i class="fa-solid fa-envelope"></i> artisan.coin@gmail.com</a
+          >
+          <a href="tel:+33344519139" id="tel"
+            ><i class="fa-solid fa-phone"></i> 0344519139</a
+          >
+          <a href="tel:+33614561166" id="portable"
+            ><i class="fa-solid fa-mobile"></i> 0614561166</a
+          >
+        </div>
+      </div>
     </section>
     <footer>
       <div class="footer-left">
@@ -209,20 +254,12 @@ Votre Message pour plus d'information sur les travaux a realiser.</textarea
           <li><a href="#">Paramètres des cookies</a></li>
         </ul>
       </div>
-      <div class="footer-middle">
-        <p>
-          Coin John<br />
-          21 rue neuve 60600 Breuil le Vert <br />
-          N° de SIRET 43141080200026
-        </p>
-        <a href="mailto:artisan.coin@gmail.com" id="mail" class="btn btn2"
-          ><i class="fa-solid fa-envelope"></i> artisan.coin@gmail.com</a
-        >
-      </div>
+
       <div class="footer-right">
-        <!-- <a href="#"
+        <p>Site realisée par</p>
+        <a href="#"
           ><img src="./images/logo-cj-white-full.png" alt="logo developpeur"
-        /></a> -->
+        /></a>
       </div>
     </footer>
 

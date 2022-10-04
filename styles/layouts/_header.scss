@@ -12,6 +12,21 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    #link-header {
+      z-index: 4;
+      color: $color3;
+      border: $color3 2px solid;
+      border-radius: 8px;
+      padding: 7px 14px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
     #nav-logo {
       height: 50px;
       padding-left: 50px;
@@ -68,21 +83,5 @@ header {
     @media screen and (max-width: 600px) {
       font-size: 1rem;
     }
-  }
-  #link-header {
-    position: fixed;
-    z-index: 2;
-    transform: translateX(-50%);
-    top: 12px;
-    left: 50%;
-    // background-color: $color3;
-    color: $color3;
-    border: $color3 2px solid;
-    border-radius: 8px;
-    padding: 7px 14px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
   }
 }
