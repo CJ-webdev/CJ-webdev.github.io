@@ -100,7 +100,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-up-down"
@@ -110,7 +109,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-file-signature"
@@ -120,7 +118,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-star-of-life"
@@ -130,7 +127,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-leaf"
@@ -140,7 +136,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-tree"
@@ -150,7 +145,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-tree-city"
@@ -160,7 +154,6 @@
         <p>
           <i
             data-aos="fade-right"
-            data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-once="false"
             class="fa-solid fa-stethoscope"
@@ -257,12 +250,14 @@
         data-aos-once="true"
         class="form"
         action=""
+        id="contact-form"
       >
         <h2>Devis Gratuits</h2>
         <i class="fa-solid fa-user"></i>
         <input
           type="text"
           name="name"
+          id="user-name"
           required
           placeholder="Votre Nom."
         /><br />
@@ -270,7 +265,7 @@
         <input
           type="tel"
           name="tel"
-          id="tel"
+          id="user-tel"
           required
           placeholder="Votre numero de Telephone."
         />
@@ -278,7 +273,7 @@
         <input
           type="email"
           name="email"
-          id="email"
+          id="user-email"
           required
           placeholder="Votre Email."
         />
@@ -286,14 +281,14 @@
         <input
           type="text"
           name="adress"
-          id="adress"
+          id="user-adress"
           required
           placeholder="Votre Adresse."
         />
         <i class="fa-solid fa-message"></i>
         <textarea
           name="message"
-          id="message"
+          id="user-message"
           cols="20"
           rows="10"
           placeholder="Votre Message pour plus d'information sur les travaux a realiser."
@@ -350,6 +345,16 @@
     <!-- cdn -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("CF04m4FT7Prie4d9s");
+      })();
+    </script>
     <!-- cdn -->
     <!-- <script src="./node_modules/aos/dist/aos.js"></script> -->
     <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->

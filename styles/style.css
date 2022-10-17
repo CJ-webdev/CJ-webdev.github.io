@@ -170,6 +170,16 @@ header nav i {
   background: rgb(250, 253, 243);
   color: rgb(18, 18, 18);
 }
+@media screen and (max-width: 700px) {
+  .section1 .descriptif {
+    margin: 20px 40px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .section1 .descriptif {
+    margin: 20px 20px;
+  }
+}
 .section1 .descriptif h2,
 .section1 .descriptif h3 {
   text-align: center;
@@ -191,6 +201,13 @@ header nav i {
 .section1 .descriptif .btn1 {
   margin-top: 10px;
   transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 700px) {
+  .section1 .descriptif .btn1 {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin: 10px auto;
+  }
 }
 .section1 .descriptif .btn1:hover {
   transform: scale(1.1);
