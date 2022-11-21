@@ -257,6 +257,13 @@ header nav i {
 .section2 .prestations .prestation-text {
   margin: 20px;
 }
+.section2 .prestations .prestation-text h4 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+.section2 .prestations .prestation-text p {
+  line-height: 25px;
+}
 
 .section3 {
   margin: 100px auto;
