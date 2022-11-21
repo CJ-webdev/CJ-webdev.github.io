@@ -16,7 +16,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 950px) {
       display: block;
     }
 
@@ -38,6 +38,9 @@
     }
     .img-entretien {
       background: url(../images/Entretien.jpg) center/cover;
+    }
+    .prestation-text {
+      margin: 20px;
     }
   }
 }

@@ -231,7 +231,7 @@ header nav i {
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   .section2 .prestations {
     display: block;
   }
@@ -253,6 +253,9 @@ header nav i {
 }
 .section2 .prestations .img-entretien {
   background: url(../images/Entretien.jpg) center/cover;
+}
+.section2 .prestations .prestation-text {
+  margin: 20px;
 }
 
 .section3 {
