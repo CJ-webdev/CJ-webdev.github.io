@@ -44,9 +44,6 @@
       &::placeholder {
         color: $color1;
       }
-      &:hover {
-        background: $color2;
-      }
       &:focus {
         box-shadow: 0 0 5px $color2;
         padding: 3%;

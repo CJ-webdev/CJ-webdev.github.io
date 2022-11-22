@@ -48,12 +48,25 @@ header {
   position: absolute;
   bottom: 0;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 20% 40%;
   align-items: center;
   justify-content: center;
   height: 50px;
   background: $transparent;
   width: 100%;
+  .fleche-bas {
+    color: $color3;
+    text-align: center;
+    animation: scalemove 1s alternate infinite ease-in-out;
+  }
+  @keyframes scalemove {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1.4);
+    }
+  }
 }
 .header-center {
   display: flex;
