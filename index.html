@@ -47,7 +47,7 @@
         </div>
         <a id="link-header" href="#">Devis Gratuits</a>
         <div class="nav-right">
-          <i id="hamburger" class="fa-solid fa-bars"></i>
+          <i id="open-btn" class="fa-solid fa-bars"></i>
         </div>
       </nav>
 
@@ -76,14 +76,44 @@
         <a href="tel:+33344519139" id="tel" class="btn btn2"
           ><i class="fa-solid fa-phone"></i> 0344519139</a
         >
-        <a class="fleche-bas" href="#section1">
-          <i class="fa-solid fa-arrow-down"></i
-        ></a>
+        <i class="fleche-bas fa-solid fa-arrow-down"></i>
         <a href="tel:+33614561166" id="portable" class="btn btn2"
           ><i class="fa-solid fa-mobile"></i> 0614561166</a
         >
       </div>
     </header>
+
+    <!-- -------------------------------------------------
+    section 0 qui sert de menu a droite
+    ------------------------------------------------- -->
+
+    <div class="section0">
+      <i id="close-btn" class="fa-solid fa-xmark"></i>
+      <span>Mes prestations</span>
+      <ul>
+        <li><a class="a-remove-1" href="#elagage-redirection"> Elagage</a></li>
+        <li><a class="a-remove-2" href="#abattage-redirection">Abattage</a></li>
+        <li>
+          <a class="a-remove-3" href="#entretien-redirection"
+            >Entretiens espaces Verts</a
+          >
+        </li>
+      </ul>
+      <span>Mes Lieux d'interventions</span>
+      <ul>
+        <li><a href="index.html">Breuil le vert</a></li>
+        <li><a href="">Elagueur Clermont de l'Oise</a></li>
+        <li><a href="">Taille de haie à Creil</a></li>
+        <li><a href="">Gouvieux</a></li>
+        <li><a href="">Senlis</a></li>
+        <li><a href="lamorlaye.html">Lamorlaye</a></li>
+      </ul>
+    </div>
+
+    <!-- -----------------------------------------------
+debut de la section 1
+----------------------------------------------- -->
+
     <section class="section1" id="section1">
       <div class="img-container">
         <img
@@ -96,17 +126,15 @@
         />
       </div>
       <div class="descriptif">
-        <h2>Qui suis-je</h2>
-        <h3>Coin john - Elagueur Grimpeur Oise</h3>
-        <h4>
-          Je vous propose mes service pour
-          <strong>l'abattage</strong>, <strong>l'élagage</strong>,
-          <strong> l'entretien de votre jardin</strong> et bien d'autres soins
-          des arbres <strong>dans l'Oise</strong>. je me situe a
-          <strong>Breuil le Vert</strong> mais j'interviens aussi dans bien
-          d'autres communes
-        </h4>
-        <h5>Je Propose</h5>
+        <span>Qui suis-je</span>
+        <h2>Coin john - Elagueur Grimpeur Oise</h2>
+        <h3>
+          Je vous propose mes service pour l'abattage, l'élagage, l'entretien de
+          votre jardin et bien d'autres soins des arbres dans l'Oise. je me
+          situe a Breuil le Vert mais j'interviens aussi dans bien d'autres
+          communes
+        </h3>
+        <h4>Je Propose</h4>
         <p>
           <i
             data-aos="fade-right"
@@ -181,11 +209,16 @@
         <a class="btn1" href="tel:+33614561166">Interventions en urgence</a>
       </div>
     </section>
+
+    <!-- -----------------------------------------------
+    debut de la section2
+    ----------------------------------------------- -->
+
     <section class="section2">
       <h2>Mes Prestations</h2>
       <div class="prestations">
         <div class="prestation prestation-left">
-          <h3>Elagage dans l'Oise</h3>
+          <h3 id="elagage-redirection">Elagage dans l'Oise</h3>
           <div
             data-aos="fade-up"
             data-aos-duration="800"
@@ -217,7 +250,7 @@
           </div>
         </div>
         <div class="prestation prestation-middle">
-          <h3>Abattage prés de Breuil le vert</h3>
+          <h3 id="abattage-redirection">Abattage prés de Breuil le vert</h3>
           <div
             data-aos="fade-up"
             data-aos-duration="800"
@@ -252,7 +285,7 @@
           </div>
         </div>
         <div class="prestation prestation-right">
-          <h3>Entretien espaces Verts</h3>
+          <h3 id="entretien-redirection">Entretien espaces Verts</h3>
           <div
             data-aos="fade-up"
             data-aos-duration="800"
