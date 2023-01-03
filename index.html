@@ -19,8 +19,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- cdn -->
 
-    <!-- emailJs--------------------------- -->
+    <!-- <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+
+    <!----------- EMAIL JS CONFIGURATION ---------------->
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -37,36 +52,21 @@
           .getElementById("contact-form")
           .addEventListener("submit", function (event) {
             event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            this.contact_number.value = (Math.random() * 100000) | 0;
-            // these IDs from the previous steps
             emailjs.sendForm("service_71elrfl", "template_6vsclip", this).then(
               function () {
-                console.log("Message envoyée");
+                alert("Message envoyée");
+                console.log("SUCCESS!");
               },
               function (error) {
-                console.log("Une erreur s'est produite", error);
+                console.log("FAILED...", error);
               }
             );
           });
       };
     </script>
-    <!-- EmailJS------------------------------------- -->
+    <!-- <script src="./sendForm.js"></script> -->
 
-    <!-- cdn -->
-    <!-- <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" /> -->
-    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="./styles/style.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link rel="icon" href="./images/logo.png" type="image/png" />
+    <!-- ----------EMAIL JS CONFIGURATION -------------->
   </head>
 
   <body>
@@ -79,7 +79,7 @@
             id="nav-logo"
           />
         </div>
-        <a id="link-header" href="#">Devis Gratuits</a>
+        <a id="link-header" href="#contact-form">Devis Gratuits</a>
         <div class="nav-right">
           <i id="open-btn" class="fa-solid fa-bars"></i>
         </div>
@@ -136,9 +136,9 @@
       <span>Mes Lieux d'interventions</span>
       <ul>
         <li><a href="index.html">Breuil le vert</a></li>
-        <li><a href="">Elagueur Clermont de l'Oise</a></li>
-        <li><a href="">Taille de haie à Creil</a></li>
-        <li><a href="">Gouvieux</a></li>
+        <li><a href=""> Clermont de l'Oise</a></li>
+        <li><a href="">Creil</a></li>
+        <li><a href="">Beauvais</a></li>
         <li><a href="">Senlis</a></li>
         <li><a href="lamorlaye.html">Lamorlaye</a></li>
       </ul>
@@ -173,7 +173,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-up-down"
             data-aos-once="true"
           ></i>
@@ -183,7 +182,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-file-signature"
             data-aos-once="true"
           ></i>
@@ -193,7 +191,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-star-of-life"
             data-aos-once="true"
           ></i>
@@ -203,7 +200,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-leaf"
             data-aos-once="true"
           ></i>
@@ -213,7 +209,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-tree"
             data-aos-once="true"
           ></i>
@@ -223,7 +218,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-tree-city"
             data-aos-once="true"
           ></i>
@@ -233,7 +227,6 @@ debut de la section 1
           <i
             data-aos="fade-right"
             data-aos-duration="800"
-            data-aos-once="false"
             class="fa-solid fa-stethoscope"
             data-aos-once="true"
           ></i>
@@ -251,14 +244,15 @@ debut de la section 1
     <section class="section2">
       <h2>Mes Prestations</h2>
       <div class="prestations">
-        <div class="prestation prestation-left">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="300"
+          data-aos-once="true"
+          class="prestation prestation-left"
+        >
           <h3 id="elagage-redirection">Elagage dans l'Oise</h3>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-once="true"
-            class="img-prestation img-elagage"
-          ></div>
+          <div class="img-prestation img-elagage"></div>
           <div class="prestation-text">
             <h4>Vous vous demandez comment et quand élaguer un arbre ?</h4>
             <p>
@@ -283,14 +277,15 @@ debut de la section 1
             </p>
           </div>
         </div>
-        <div class="prestation prestation-middle">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="300"
+          data-aos-once="true"
+          class="prestation prestation-middle"
+        >
           <h3 id="abattage-redirection">Abattage prés de Breuil le vert</h3>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-once="true"
-            class="img-prestation img-abbatage"
-          ></div>
+          <div class="img-prestation img-abbatage"></div>
           <div class="prestation-text">
             <h4>Comment abattre un arbre ?</h4>
             <p>
@@ -318,14 +313,15 @@ debut de la section 1
             </p>
           </div>
         </div>
-        <div class="prestation prestation-right">
+        <div
+          data-aos-delay="300"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-once="true"
+          class="prestation prestation-right"
+        >
           <h3 id="entretien-redirection">Entretien espaces Verts</h3>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-once="true"
-            class="img-prestation img-entretien"
-          ></div>
+          <div class="img-prestation img-entretien"></div>
           <div class="prestation-text">
             <h4>
               Faites moi confiance pour l’entretien de vos espaces verts !
@@ -491,13 +487,15 @@ debut de la section 1
         /></a>
       </div>
     </footer>
+
     <!-- cdn -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
     <!-- cdn -->
+
+    <script src="./index.js"></script>
+
     <!-- <script src="./node_modules/aos/dist/aos.js"></script> -->
     <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
-    <script src="./index.js"></script>
   </body>
 </html>

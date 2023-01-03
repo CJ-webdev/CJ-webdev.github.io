@@ -14,11 +14,9 @@ footer {
     padding-left: 10px;
 
     ul {
-      @media screen and (max-width: 650px) {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
     li {
       list-style: none;
@@ -32,7 +30,7 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: center;
     @media screen and (max-width: 390px) {
       p {
         display: none;

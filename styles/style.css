@@ -459,12 +459,10 @@ footer .footer-left {
   margin: auto;
   padding-left: 10px;
 }
-@media screen and (max-width: 650px) {
-  footer .footer-left ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+footer .footer-left ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 footer .footer-left li {
   list-style: none;
@@ -477,7 +475,7 @@ footer .footer-right {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: right;
+  align-items: center;
 }
 @media screen and (max-width: 390px) {
   footer .footer-right p {
