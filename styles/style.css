@@ -496,4 +496,27 @@ footer .footer-right img {
   footer .footer-right img {
     width: 75px;
   }
+}
+
+.header-about {
+  background: url(../../images/background.jpg) fixed;
+  height: auto;
+}
+
+.h1-about {
+  padding: 100px 20px 20px 20px;
+  color: rgb(250, 253, 243);
+  background: rgba(0, 0, 0, 0.297);
+}
+
+.p-about {
+  margin: auto;
+  width: 90%;
+  color: rgb(250, 253, 243);
+  background: rgba(0, 0, 0, 0.297);
+  font-size: 1rem;
+}
+.p-about span {
+  display: inline;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

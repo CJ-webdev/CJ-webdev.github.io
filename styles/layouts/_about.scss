@@ -1,0 +1,20 @@
+.header-about {
+  background: url(../../images/background.jpg) fixed;
+  height: auto;
+}
+.h1-about {
+  padding: 100px 20px 20px 20px;
+  color: $white;
+  background: $transparent;
+}
+.p-about {
+  margin: auto;
+  width: 90%;
+  color: $white;
+  background: $transparent;
+  font-size: 1rem;
+  span {
+    display: inline;
+    text-decoration: underline;
+  }
+}
