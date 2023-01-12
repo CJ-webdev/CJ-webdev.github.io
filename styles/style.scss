@@ -1,9 +1,4 @@
-@import "./settings.scss";
-@import "./layouts/_header.scss";
-@import "./layouts/_section0.scss";
-@import "./layouts/_section1.scss";
-@import "./layouts/_section2.scss";
-@import "./layouts/_section3.scss";
-@import "./layouts/_section4.scss";
-@import "./layouts/_footer.scss";
-@import "./layouts/about.scss";
+@import "./settings";
+@import "./layout/header";
+@import "./layout/section1";
+@import "./layout/section0";
