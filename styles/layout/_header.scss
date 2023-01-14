@@ -2,7 +2,6 @@ header {
   height: 500px;
   .top-nav {
     height: 80px;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,29 +40,19 @@ header {
   }
   .header-center {
     background: url("../../images/background.jpg") center/cover;
-    height: 370px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
     position: relative;
     .h1-box {
-      height: 80%;
-      width: 100%;
-      background-color: $transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 320px;
+      background: $transparent;
+      display: grid;
+      grid-template-rows: 40% 60%;
+
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
-
       h1 {
-        padding: 20px;
-        height: 80%;
+        margin: auto;
         color: $white;
         text-align: center;
         font-family: "fontTitle", serif;
@@ -75,11 +64,10 @@ header {
       p {
         font-weight: 500;
         font-size: 1rem;
-        width: 95%;
+        width: 90%;
         color: $color1;
-        height: 50%;
         text-align: center;
-        margin-bottom: 20px;
+        margin: auto;
       }
     }
   }
