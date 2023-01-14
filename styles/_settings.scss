@@ -26,6 +26,7 @@ $black: rgb(18, 18, 18);
 $transparent: rgba(0, 0, 0, 0.7);
 
 body {
+  width: 100vw;
   background-color: $white;
   color: $black;
   font-family: "font1", sans-serif;
