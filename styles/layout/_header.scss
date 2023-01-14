@@ -1,5 +1,6 @@
 header {
   height: 500px;
+  width: 100vw;
   .top-nav {
     height: 80px;
     display: flex;
@@ -42,6 +43,7 @@ header {
     background: url("../../images/background.jpg") center/cover;
     height: 400px;
     position: relative;
+    width: 100%;
     .h1-box {
       height: 320px;
       background: $transparent;

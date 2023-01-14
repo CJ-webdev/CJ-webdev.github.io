@@ -37,6 +37,7 @@ a {
 
 header {
   height: 500px;
+  width: 100vw;
 }
 header .top-nav {
   height: 80px;
@@ -80,6 +81,7 @@ header .header-center {
   background: url("../../images/background.jpg") center/cover;
   height: 400px;
   position: relative;
+  width: 100%;
 }
 header .header-center .h1-box {
   height: 320px;
@@ -113,6 +115,7 @@ header .header-center .h1-box p {
   background: rgb(255, 255, 245);
 }
 .section1 .title-service {
+  margin-top: 40px;
   height: 100px;
   display: flex;
   align-items: center;
