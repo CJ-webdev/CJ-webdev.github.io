@@ -89,9 +89,9 @@ header .header-center {
   position: relative;
 }
 header .header-center .h1-box {
-  height: 70%;
+  height: 80%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.461);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,11 +100,11 @@ header .header-center .h1-box {
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 header .header-center .h1-box h1 {
-  padding: 10px;
+  padding: 20px;
   height: 80%;
   color: rgb(255, 255, 245);
   text-align: center;
@@ -115,11 +115,13 @@ header .header-center .h1-box h1 {
   font-weight: 700;
 }
 header .header-center .h1-box p {
+  font-weight: 500;
+  font-size: 1rem;
   width: 95%;
   color: rgb(245, 127, 23);
-  height: 20%;
+  height: 50%;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .section1 {
@@ -159,7 +161,24 @@ header .header-center .h1-box p {
 }
 .section1 .cards .card .center-card {
   height: 70%;
-  background: url("../../images/background.jpg") center/cover;
+}
+.section1 .cards .card .card1 {
+  background: url("../../images/background-couverture.jpg") center/cover;
+}
+.section1 .cards .card .card2 {
+  background: url("../../images/background-ravalement.jpg") center/cover;
+}
+.section1 .cards .card .card3 {
+  background: url("../../images/backgroun-peinturetoiture.jpg") center/cover;
+}
+.section1 .cards .card .card4 {
+  background: url("../../images/nettoyage1.jpg") center/cover;
+}
+.section1 .cards .card .card5 {
+  background: url("../../images/renovation3.jpg") center/cover;
+}
+.section1 .cards .card .card6 {
+  background: url("../../images/background-tempete.jpg") center/cover;
 }
 .section1 .cards .card .bottom-card {
   height: 10%;

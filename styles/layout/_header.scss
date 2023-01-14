@@ -47,7 +47,7 @@ header {
     align-items: center;
     position: relative;
     .h1-box {
-      height: 70%;
+      height: 80%;
       width: 100%;
       background-color: $transparent;
       display: flex;
@@ -58,11 +58,11 @@ header {
       transform: translateY(-50%);
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: column;
 
       h1 {
-        padding: 10px;
+        padding: 20px;
         height: 80%;
         color: $white;
         text-align: center;
@@ -73,11 +73,13 @@ header {
         font-weight: 700;
       }
       p {
+        font-weight: 500;
+        font-size: 1rem;
         width: 95%;
         color: $color1;
-        height: 20%;
+        height: 50%;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
     }
   }
