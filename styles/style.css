@@ -35,6 +35,10 @@ a {
   transition: 0.5s ease-in-out;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 header {
   height: 500px;
   width: 100vw;
@@ -102,6 +106,16 @@ header .header-center .h1-box h1 {
   font-size: 1.2rem;
   font-weight: 700;
 }
+@media screen and (min-width: 520px) {
+  header .header-center .h1-box h1 {
+    margin: 50px;
+  }
+}
+@media screen and (min-width: 880px) {
+  header .header-center .h1-box h1 {
+    margin: 80px;
+  }
+}
 header .header-center .h1-box p {
   font-weight: 500;
   font-size: 1rem;
@@ -109,6 +123,11 @@ header .header-center .h1-box p {
   color: rgb(245, 127, 23);
   text-align: center;
   margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  header .header-center .h1-box p {
+    margin: 50px;
+  }
 }
 
 .section1 {
@@ -123,15 +142,27 @@ header .header-center .h1-box p {
   text-transform: uppercase;
 }
 .section1 .title-service h2 {
+  font-size: 1.5rem;
   font-family: "fontTitle", serif;
 }
 .section1 .cards {
   width: 90%;
   margin: auto;
 }
+@media screen and (min-width: 750px) {
+  .section1 .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .section1 .cards .card {
   height: 400px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 750px) {
+  .section1 .cards .card {
+    margin: 20px;
+  }
 }
 .section1 .cards .card .top-card {
   background: rgb(230, 230, 230);
@@ -181,13 +212,85 @@ header .header-center .h1-box p {
   font-weight: 600;
 }
 
-.section0 {
+.section1-5 {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+@media screen and (min-width: 950px) {
+  .section1-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+.section1-5 h2 {
+  color: rgb(245, 127, 23);
+  font-family: "fontTitle", serif;
+  margin: 30px auto;
+}
+.section1-5 p {
+  font-size: 1rem;
+}
+.section1-5 .section1-5right {
   display: none;
+}
+.section1-5 .section1-5right img {
+  width: 90%;
+}
+@media screen and (min-width: 950px) {
+  .section1-5 .section1-5right {
+    display: block;
+    margin: auto;
+  }
+}
+
+#open-section-0 {
+  right: 0;
+}
+
+.section0 {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  text-align: right;
+  right: -300px;
+  background: rgb(245, 127, 23);
+  transition: 0.5s ease;
+}
+.section0 #close-btn {
+  display: block;
+  text-align: left;
+  padding: 12px 12px;
+  font-size: 2rem;
+  color: rgb(255, 255, 245);
+}
+.section0 span {
+  font-size: 1.5rem;
+}
+.section0 span,
+.section0 a {
+  padding: 8px 16px;
+  color: rgb(255, 255, 245);
+  display: block;
+  transition: 0.3s;
+}
+.section0 a {
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .section2 {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 750px) {
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .section2 .form {
   margin: auto;
@@ -250,6 +353,20 @@ header .header-center .h1-box p {
 }
 .section2 .infos h3 {
   margin-bottom: 10px;
+}
+
+.section-image {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 750px) {
+  .section-image {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.section-image img {
+  width: 100%;
 }
 
 footer {

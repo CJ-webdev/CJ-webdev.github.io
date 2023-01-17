@@ -8,15 +8,23 @@
     justify-content: center;
     text-transform: uppercase;
     h2 {
+      font-size: 1.5rem;
       font-family: "fontTitle", serif;
     }
   }
   .cards {
     width: 90%;
     margin: auto;
+    @media screen and (min-width: 750px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     .card {
       height: 400px;
       margin-bottom: 20px;
+      @media screen and (min-width: 750px) {
+        margin: 20px;
+      }
       .top-card {
         background: $color3;
         height: 20%;

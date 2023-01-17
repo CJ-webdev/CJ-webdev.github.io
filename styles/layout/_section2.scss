@@ -1,5 +1,9 @@
 .section2 {
   margin-top: 50px;
+  @media screen and (min-width: 750px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   .form {
     margin: auto;
