@@ -416,4 +416,18 @@ footer .footer-right img {
   footer .footer-right img {
     width: 75px;
   }
+}
+
+.header-about {
+  height: auto;
+}
+
+.center-about {
+  width: 90%;
+  margin: auto;
+}
+
+.infos-about {
+  margin-top: 50px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

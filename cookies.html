@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Couvreur Oise: votre expert en toiture pour tous vos besoins - John.C
+      Toitures & Façades
+    </title>
+    <meta
+      name="description"
+      content="Notre entreprise de couvreur dans l'Oise vous propose des services de qualité pour tous vos besoins en matière de toiture, de la réparation à la rénovation. Faites appel à notre expertise en tant que couvreur dans l'Oise."
+    />
+
+    <!-- cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- cdn -->
+
+    <!-- <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!----------- EMAIL JS CONFIGURATION ---------------->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("CF04m4FT7Prie4d9s");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("service_71elrfl", "template_6vsclip", this).then(
+              function () {
+                alert("Message envoyée");
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+
+    <!-- ----------EMAIL JS CONFIGURATION -------------->
+  </head>
+
+  <body>
+    <header class="header-about">
+      <div class="top-nav">
+        <a href="./index.html">
+          <img src="images/logo.png" alt="logo coin john elagage" id="nav-logo"
+        /></a>
+      </div>
+      <nav>
+        <a href="tel:+33614561166" id="portable" class="btn btn2"
+          ><i class="fa-solid fa-phone"></i
+        ></a>
+        <a id="link-header" href="#contact-form">Devis Gratuits</a>
+        <div class="nav-right">
+          <i id="open-btn" class="fa-solid fa-bars hamburger"></i>
+        </div>
+      </nav>
+    </header>
+    <h1 class="h1-about">COOKIES:</h1>
+    <div class="center-about">
+      <p>
+        La plupart de nos pages utilisent des cookies. Les cookies ne nuisent
+        pas à votre ordinateur et ne contiennent pas de virus. Les cookies
+        servent à rendre votre expérience de navigation plus conviviale,
+        efficace et sécurisée. Les cookies sont de petits fichiers texte stockés
+        sur votre ordinateur et stockés par votre navigateur.
+      </p>
+      <br />
+      <p>
+        La plupart des cookies que nous utilisons sont des « cookies de session
+        ». Ils seront supprimés automatiquement à la fin de votre visite. Les
+        autres cookies restent stockés sur votre appareil jusqu’à ce que vous
+        les supprimiez. Ces cookies nous permettent de reconnaître votre
+        navigateur la prochaine fois que vous visitez ce site.
+      </p>
+      <br />
+      <p>
+        Vous pouvez configurer votre navigateur pour être informé du paramétrage
+        des cookies et autoriser les cookies uniquement dans des cas
+        spécifiques, accepter les cookies dans certains cas ou les exclure de
+        façon globale et activer la suppression automatique des cookies lors de
+        la fermeture du navigateur. La désactivation des cookies peut limiter
+        les fonctionnalités de ce site Web.
+      </p>
+      <br />
+      <p>
+        Les cookies nécessaires pour effectuer le processus de communication
+        électronique ou pour fournir certaines fonctions que vous souhaitez
+        utiliser (par exemple, la fonction de panier) sont traités sur la base
+        de l’article 6, paragraphe 1, lit. f du RGPD. L’exploitant du site Web a
+        un intérêt légitime à ce que les cookies soient stockés pour la
+        fourniture de services sans erreur et optimisés sur le plan technique.
+        Si d’autres cookies (par exemple des cookies pour l’analyse de votre
+        comportement de navigation) sont stockés, ils seront traités séparément
+        dans cette politique de confidentialité.
+      </p>
+      <br />
+      <p><span>Google Analytics</span></p>
+      <br />
+      <p>
+        Ce site utilise les fonctions du service d’analyse Web Google Analytics.
+        Le fournisseur est Google Inc., 1600 Amphitheater Parkway, Mountain
+        View, CA 94043, États-Unis.
+      </p>
+      <br />
+      <p>
+        Google Analytics utilise des « cookies ». Ce sont des fichiers texte qui
+        sont stockés sur votre ordinateur et qui permettent d’analyser votre
+        façon d’utiliser le site. Les informations générées par les cookies
+        concernant votre utilisation de ce site sont généralement transmises à
+        un serveur de Google aux Etats-Unis et y sont stockées.
+      </p>
+      <br />
+      <p>
+        Les cookies de Google Analytics sont stockés sur la base de l’article 6,
+        paragraphe 1, lit. f RGPD. L’exploitant du site Web a un intérêt
+        légitime à analyser le comportement des utilisateurs afin d’optimiser à
+        la fois son site Web et sa publicité.
+      </p>
+    </div>
+
+    <!-- -------------------------------------------------
+    section 0 qui sert de menu a droite
+    ------------------------------------------------- -->
+
+    <div class="section0">
+      <i id="close-btn" class="fa-solid fa-xmark"></i>
+      <a href="./index.html">Accueil</a>
+      <span>Nos Services</span>
+      <ul>
+        <li><a href="./couverture.html">Couverture</a></li>
+        <li><a href="./peinture-facade.html">Peinture Façade</a></li>
+        <li><a href="./peinture-toiture.html">Peinture Toiture</a></li>
+        <li><a href="./nettoyage-hydrofuge.html">Nettoyage Hydrofuge</a></li>
+        <li><a href="./renovation.html">Renovation</a></li>
+        <li><a href="./urgence-tempete.html">Urgence Tempête</a></li>
+      </ul>
+    </div>
+
+    <!-- -----------------------------------------------
+debut de la section 1
+----------------------------------------------- -->
+
+    <!-- -----------------------------------------------
+    debut de la section2
+    ----------------------------------------------- -->
+
+    <section class="section2">
+      <div class="infos">
+        <h2>Mes infos</h2>
+        <h3>Coin John</h3>
+        <p>
+          21 rue neuve 60600 Breuil le Vert <br />
+          N° de SIRET 43141080200026
+        </p>
+        <a href="mailto:artisan.coin@gmail.com"
+          ><i class="fa-solid fa-envelope"></i> artisan.coin@gmail.com</a
+        >
+        <a href="tel:+33344519139"
+          ><i class="fa-solid fa-phone"></i> 0344519139</a
+        >
+        <a href="tel:+33614561166"
+          ><i class="fa-solid fa-mobile"></i> 0614561166</a
+        >
+      </div>
+      <div class="infos-about">
+        <h3>Mes Villes D'interventions</h3>
+        <ul>
+          <li>Breuil le vert</li>
+          <li>Clermont</li>
+          <li>Creil</li>
+          <li>Senlis</li>
+          <li>Beauvais</li>
+          <li>Gouvieux</li>
+          <li>Lamorlaye</li>
+          <li>Chantilly</li>
+          <li>Compiegne</li>
+          <li>et bien d'autres...</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <ul>
+          <li><a href="./mentions.html">Mentions légales</a></li>
+          <li>
+            <a href="./confidentialite.html">Politique de confidentialité</a>
+          </li>
+          <li><a href="./cookies.html">Paramètres des cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p>Site realisée par</p>
+        <a href="#"
+          ><img src="./images/logo-cj-white-full.png" alt="logo developpeur"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- cdn -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
